@@ -28,28 +28,23 @@ void loop() {
     mesafe = 200;
   }
   if(mesafe <= 20) {
-   for(int buzzer = 0; buzzer < 20; buzzer++) {
-    digitalWrite(yesil, LOW);
+     digitalWrite(yesil, LOW);
     digitalWrite(mavi, LOW);
-    delay(10);
+   for(int buzzer = 0; buzzer < 20; buzzer++) {
     digitalWrite(kirmizi, HIGH);
     digitalWrite(buzzer, HIGH);
-    delay(100);
+    delay(80);
     digitalWrite(buzzer, LOW);
-    delay(10);
    }
   } 
   if(mesafe >= 20 && mesafe <= 40) {
-    for(int buzzer = 0; buzzer < 20; buzzer++) {
-   digitalWrite(buzzer, LOW);
-   digitalWrite(kirmizi, LOW);
+       digitalWrite(kirmizi, LOW);
    digitalWrite(yesil, LOW);
-   delay(100);
+    for(int buzzer = 0; buzzer < 20; buzzer++) {
    digitalWrite(mavi, HIGH);
     digitalWrite(buzzer, HIGH);
-    delay(120);
+    delay(100);
     digitalWrite(buzzer, LOW);
-    delay(10);
    }   
   } 
   if(mesafe > 40){
